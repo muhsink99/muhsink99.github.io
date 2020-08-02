@@ -1,9 +1,9 @@
 // Background colours:
-$background-colour: black;
+$background-colour: lighten(black, 15%);
 
 // Text colours:
 $base-colour: #fff;
-$base-colour-hover: darken($base-colour, 25%);
+$base-colour-hover: darken($base-colour, 35%);
 
 // Border colors
 $border-colour: #dcd9d9;
@@ -185,7 +185,7 @@ header {
     button {
       font-family: $roboto;
       margin: 0px auto;
-      background-color: black;
+      background-color: $background-colour;
       color: $base-colour;
       border: 1.5px $base-colour solid;
 

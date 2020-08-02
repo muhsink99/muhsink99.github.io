@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: black;
+  background: #262626;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
@@ -24,14 +24,14 @@ body a i {
   size: 200px;
 }
 body a i:hover {
-  color: #bfbfbf;
+  color: #a6a6a6;
 }
 body h3 {
   text-align: center;
   font-weight: 450;
   font-size: 1em;
   background-color: #fff;
-  color: black;
+  color: #262626;
   font-family: "Poppins", sans-serif;
   max-width: 150px;
 }
@@ -64,7 +64,7 @@ header a {
 }
 header a:hover {
   text-decoration: none;
-  color: #bfbfbf;
+  color: #a6a6a6;
 }
 
 /** 
@@ -97,7 +97,7 @@ header a:hover {
 }
 #lead-content h2 {
   text-align: center;
-  color: #bfbfbf;
+  color: #a6a6a6;
   font-weight: 450;
   font-size: 1.5em;
   margin-top: 5px;
@@ -154,13 +154,13 @@ header a:hover {
 #projects-content #project-card button {
   font-family: "Roboto", sans-serif;
   margin: 0px auto;
-  background-color: black;
+  background-color: #262626;
   color: #fff;
   border: 1.5px #fff solid;
 }
 #projects-content #project-card button:hover {
-  color: #bfbfbf;
-  border: 1.5px #bfbfbf solid;
+  color: #a6a6a6;
+  border: 1.5px #a6a6a6 solid;
 }
 
 /** 
