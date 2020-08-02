@@ -1,122 +1,133 @@
-// Background colours: 
-$background-colour:black; 
+// Background colours:
+$background-colour: black;
 
-// Text colours: 
-$base-colour: #fff; 
+// Text colours:
+$base-colour: #fff;
 $base-colour-hover: darken($base-colour, 25%);
 
 // Border colors
 $border-colour: #dcd9d9;
 
-// Fonts: 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-$poppins: 'Poppins', sans-serif;
-$roboto: 'Roboto', sans-serif;
+// Fonts:
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+$poppins: "Poppins", sans-serif;
+$roboto: "Roboto", sans-serif;
 
-html { 
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body { 
-    background: $background-colour;
-    font-family: $roboto; 
-    color: $base-colour;
+body {
+  background: $background-colour;
+  font-family: $roboto;
+  color: $base-colour;
 
-    p {
-        font-size: 20px;
-        text-align: center;
-        margin-left: 0px auto; 
-        margin-right: 0px auto;
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+  }
+
+  &.active {
+    overflow: hidden;
+    z-index: -1;
+  }
+  a {
+    i {
+      padding: 20px;
+      color: darken($base-colour, 10%);
+      size: 200px;
+
+      &:hover {
+        color: $base-colour-hover;
+      }
     }
+  }
 
-    &.active {
-        overflow: hidden;
-        z-index: -1;
-    }
-    a { 
-        i {
-            padding: 20px;
-            color: darken($base-colour, 10%); 
-            size: 200px;
-
-            &:hover { 
-                color: $base-colour-hover;
-            }
-        }
-   }
+  h3 {
+    text-align: center;
+    margin: 10px auto;
+    font-weight: 450;
+    font-size: 1em;
+    background-color: $base-colour;
+    color: $background-colour;
+    font-family: $poppins;
+    max-width: 150px;
+  }
 }
 
 /** 
     -- MENU CONTENT -- 
 **/
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
 
-    ul { 
-        display: inline-block; 
-        padding: 10px; 
-        margin: 20px;
+  ul {
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    padding: 10px;
+    font-size: 1em;
+    color: $base-colour;
+    font-family: $poppins;
+    border: 1px solid;
+
+    &:hover {
+      text-decoration: none;
+      color: $base-colour-hover;
     }
-
-    li { 
-        display: inline-block;
-    }
-
-    a { 
-        padding: 10px;
-        margin: 20px;
-        font-size: 1.5em;
-        color: $base-colour;
-        font-family: $poppins;
-        border: 1px solid;
-
-        &:hover { 
-            text-decoration: none; 
-            color: $base-colour-hover;
-        }
-    }
+  }
 }
 /** 
     -- LEADING SECTION -- 
 **/
 
 #lead {
-    position: relative;
-    height: 100vh;
-    min-height: 500px;
-    max-height: 1080px;
-    background-size: cover;
-    padding: 15px;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1080px;
+  background-size: cover;
+  padding: 15px;
+  overflow: hidden;
 }
 
-#lead-content { 
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+#lead-content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 
-    h1 { 
-        text-align: center;
-        color: $base-colour;
-        font-weight: 900;
-        font-size: 4em;
-        font-family: $poppins; 
-    }
-    h2 { 
-        text-align: center;
-        color: $base-colour-hover;
-        font-weight: 450; 
-        margin-top: 5px; 
-        font-family: $roboto; 
-    }
+  h1 {
+    text-align: center;
+    color: $base-colour;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: $poppins;
+  }
+  h2 {
+    text-align: center;
+    color: $base-colour-hover;
+    font-weight: 450;
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-family: $roboto;
+  }
 }
 
 /** 
@@ -124,58 +135,70 @@ header {
 **/
 
 #about-content {
-    padding: 50px 15px;
+  padding: 50px 15px;
+  text-align: center;
+
+  h2 {
     text-align: center;
+    color: $base-colour;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: $poppins;
+    text-decoration: underline;
+  }
 
-    h2 { 
-        text-align: center;
-        color: $base-colour;
-        font-weight: 900;
-        font-size: 2em;
-        font-family: $poppins; 
-        text-decoration: underline;
-    }
-
-    padding-bottom: 300px;
+  padding-bottom: 300px;
 }
 
 /**
     -- PROJECT SECTION -- 
 **/
 
-#projects-content { 
-    padding: 50px 15px;
+#projects-content {
+  padding: 50px 15px;
+  text-align: center;
+
+  h2 {
     text-align: center;
+    color: $base-colour;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: $poppins;
+    text-decoration: underline;
+  }
 
-    h2 { 
-        text-align: center;
-        color: $base-colour;
-        font-weight: 900;
-        font-size: 2em;
-        font-family: $poppins; 
-        text-decoration: underline;
-    }
-
-    padding-bottom: 300px;
-
+  padding-bottom: 300px;
 }
 
 /** 
     -- SKILLS SECTION --
 **/
-#skills-content { 
-    padding: 50px 15px;
+#skills-content {
+  padding: 50px 15px;
+  text-align: center;
+
+  h2 {
     text-align: center;
+    color: $base-colour;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: $poppins;
+    text-decoration: underline;
+  }
 
-    h2 { 
-        text-align: center;
-        color: $base-colour;
-        font-weight: 900;
-        font-size: 2em;
-        font-family: $poppins; 
-        text-decoration: underline;
-    }
+  i {
+    margin: 5px;
+  }
 
-    padding-bottom: 300px;
+  #skill {
+    border: 1px white solid;
+    margin: 5px auto;
+    padding: 5px;
+  }
 
+  #skill-subsection {
+    margin: 25px;
+  }
+
+  padding-bottom: 300px;
 }

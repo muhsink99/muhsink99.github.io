@@ -26,6 +26,16 @@ body a i {
 body a i:hover {
   color: #bfbfbf;
 }
+body h3 {
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 450;
+  font-size: 1em;
+  background-color: #fff;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  max-width: 150px;
+}
 
 /** 
     -- MENU CONTENT -- 
@@ -48,8 +58,7 @@ header li {
 }
 header a {
   padding: 10px;
-  margin: 20px;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #fff;
   font-family: "Poppins", sans-serif;
   border: 1px solid;
@@ -84,13 +93,14 @@ header a:hover {
   text-align: center;
   color: #fff;
   font-weight: 900;
-  font-size: 4em;
+  font-size: 2em;
   font-family: "Poppins", sans-serif;
 }
 #lead-content h2 {
   text-align: center;
   color: #bfbfbf;
   font-weight: 450;
+  font-size: 1.5em;
   margin-top: 5px;
   font-family: "Roboto", sans-serif;
 }
@@ -144,6 +154,17 @@ header a:hover {
   font-size: 2em;
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
+}
+#skills-content i {
+  margin: 5px;
+}
+#skills-content #skill {
+  border: 1px white solid;
+  margin: 5px auto;
+  padding: 5px;
+}
+#skills-content #skill-subsection {
+  margin: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
