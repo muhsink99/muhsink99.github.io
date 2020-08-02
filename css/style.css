@@ -28,7 +28,39 @@ body a i:hover {
 }
 
 /** 
- -- LEADING SECTION -- 
+    -- MENU CONTENT -- 
+**/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+header ul {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+}
+header li {
+  display: inline-block;
+}
+header a {
+  padding: 10px;
+  margin: 20px;
+  font-size: 1.5em;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid;
+}
+header a:hover {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+/** 
+    -- LEADING SECTION -- 
 **/
 #lead {
   position: relative;
@@ -64,11 +96,12 @@ body a i:hover {
 }
 
 /** 
--- ABOUT SECTION -- 
+    -- ABOUT SECTION -- 
 **/
 #about-content {
   padding: 50px 15px;
   text-align: center;
+  padding-bottom: 300px;
 }
 #about-content h2 {
   text-align: center;
@@ -80,7 +113,37 @@ body a i:hover {
 }
 
 /**
--- SKILLS SECTION -- 
+    -- PROJECT SECTION -- 
 **/
+#projects-content {
+  padding: 50px 15px;
+  text-align: center;
+  padding-bottom: 300px;
+}
+#projects-content h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+}
+
+/** 
+    -- SKILLS SECTION --
+**/
+#skills-content {
+  padding: 50px 15px;
+  text-align: center;
+  padding-bottom: 300px;
+}
+#skills-content h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */

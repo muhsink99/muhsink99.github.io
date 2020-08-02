@@ -47,7 +47,42 @@ body {
 }
 
 /** 
- -- LEADING SECTION -- 
+    -- MENU CONTENT -- 
+**/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+
+    ul { 
+        display: inline-block; 
+        padding: 10px; 
+        margin: 20px;
+    }
+
+    li { 
+        display: inline-block;
+    }
+
+    a { 
+        padding: 10px;
+        margin: 20px;
+        font-size: 1.5em;
+        color: $base-colour;
+        font-family: $poppins;
+        border: 1px solid;
+
+        &:hover { 
+            text-decoration: none; 
+            color: $base-colour-hover;
+        }
+    }
+}
+/** 
+    -- LEADING SECTION -- 
 **/
 
 #lead {
@@ -85,7 +120,7 @@ body {
 }
 
 /** 
--- ABOUT SECTION -- 
+    -- ABOUT SECTION -- 
 **/
 
 #about-content {
@@ -100,8 +135,47 @@ body {
         font-family: $poppins; 
         text-decoration: underline;
     }
+
+    padding-bottom: 300px;
 }
 
 /**
--- SKILLS SECTION -- 
+    -- PROJECT SECTION -- 
 **/
+
+#projects-content { 
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 { 
+        text-align: center;
+        color: $base-colour;
+        font-weight: 900;
+        font-size: 2em;
+        font-family: $poppins; 
+        text-decoration: underline;
+    }
+
+    padding-bottom: 300px;
+
+}
+
+/** 
+    -- SKILLS SECTION --
+**/
+#skills-content { 
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 { 
+        text-align: center;
+        color: $base-colour;
+        font-weight: 900;
+        font-size: 2em;
+        font-family: $poppins; 
+        text-decoration: underline;
+    }
+
+    padding-bottom: 300px;
+
+}
