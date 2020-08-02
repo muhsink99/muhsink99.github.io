@@ -1,8 +1,46 @@
-body {
-  background: black;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
 }
 
-#header-content {
+body {
+  background: black;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+body p {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 0px auto;
+  margin-right: 0px auto;
+}
+body.active {
+  overflow: hidden;
+  z-index: -1;
+}
+body a i {
+  padding: 20px;
+  color: #e6e6e6;
+  size: 200px;
+}
+body a i:hover {
+  color: #bfbfbf;
+}
+
+/** 
+ -- LEADING SECTION -- 
+**/
+#lead {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1080px;
+  background-size: cover;
+  padding: 15px;
+  overflow: hidden;
+}
+
+#lead-content {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -10,17 +48,39 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#header-content h1 {
+#lead-content h1 {
   text-align: center;
   color: #fff;
   font-weight: 900;
   font-size: 4em;
+  font-family: "Poppins", sans-serif;
 }
-#header-content h2 {
+#lead-content h2 {
   text-align: center;
   color: #bfbfbf;
   font-weight: 450;
   margin-top: 5px;
+  font-family: "Roboto", sans-serif;
 }
+
+/** 
+-- ABOUT SECTION -- 
+**/
+#about-content {
+  padding: 50px 15px;
+  text-align: center;
+}
+#about-content h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+}
+
+/**
+-- SKILLS SECTION -- 
+**/
 
 /*# sourceMappingURL=style.css.map */

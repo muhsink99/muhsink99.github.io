@@ -1,16 +1,66 @@
 // Background colours: 
-$background-color:black; 
+$background-colour:black; 
 
 // Text colours: 
-$heading: #fff; 
+$base-colour: #fff; 
+$base-colour-hover: darken($base-colour, 25%);
+
+// Border colors
+$border-colour: #dcd9d9;
 
 // Fonts: 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
 
-body { 
-    background: $background-color;
+html { 
+    scroll-behavior: smooth;
 }
 
-#header-content { 
+body { 
+    background: $background-colour;
+    font-family: $roboto; 
+    color: $base-colour;
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0px auto; 
+        margin-right: 0px auto;
+    }
+
+    &.active {
+        overflow: hidden;
+        z-index: -1;
+    }
+    a { 
+        i {
+            padding: 20px;
+            color: darken($base-colour, 10%); 
+            size: 200px;
+
+            &:hover { 
+                color: $base-colour-hover;
+            }
+        }
+   }
+}
+
+/** 
+ -- LEADING SECTION -- 
+**/
+
+#lead {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#lead-content { 
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -20,14 +70,38 @@ body {
 
     h1 { 
         text-align: center;
-        color: $heading;
+        color: $base-colour;
         font-weight: 900;
         font-size: 4em;
+        font-family: $poppins; 
     }
     h2 { 
         text-align: center;
-        color: darken($heading, 25%); 
+        color: $base-colour-hover;
         font-weight: 450; 
         margin-top: 5px; 
+        font-family: $roboto; 
     }
 }
+
+/** 
+-- ABOUT SECTION -- 
+**/
+
+#about-content {
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 { 
+        text-align: center;
+        color: $base-colour;
+        font-weight: 900;
+        font-size: 2em;
+        font-family: $poppins; 
+        text-decoration: underline;
+    }
+}
+
+/**
+-- SKILLS SECTION -- 
+**/
