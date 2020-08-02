@@ -23,7 +23,7 @@ body {
   color: $base-colour;
 
   p {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-left: 0px auto;
     margin-right: 0px auto;
@@ -47,7 +47,7 @@ body {
 
   h3 {
     text-align: center;
-    margin: 10px auto;
+    // margin: 10px auto;
     font-weight: 450;
     font-size: 1em;
     background-color: $base-colour;
@@ -70,7 +70,7 @@ header {
 
   ul {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     margin: 20px;
   }
 
@@ -79,7 +79,7 @@ header {
   }
 
   a {
-    padding: 10px;
+    padding: 5px;
     font-size: 1em;
     color: $base-colour;
     font-family: $poppins;
@@ -120,6 +120,7 @@ header {
     font-size: 2em;
     font-family: $poppins;
   }
+
   h2 {
     text-align: center;
     color: $base-colour-hover;
@@ -147,7 +148,7 @@ header {
     text-decoration: underline;
   }
 
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 
 /**
@@ -156,7 +157,6 @@ header {
 
 #projects-content {
   padding: 50px 15px;
-  text-align: center;
 
   h2 {
     text-align: center;
@@ -167,7 +167,38 @@ header {
     text-decoration: underline;
   }
 
-  padding-bottom: 300px;
+  #project-card {
+    img {
+      width: 60%;
+      margin: 5px;
+      border: 1px white solid;
+    }
+
+    p {
+      text-align: left;
+      color: $base-colour;
+      font-weight: 300;
+      font-size: 1em;
+      font-family: $roboto;
+    }
+
+    button {
+      font-family: $roboto;
+      margin: 0px auto;
+      background-color: black;
+      color: $base-colour;
+      border: 1.5px $base-colour solid;
+
+      &:hover {
+        color: $base-colour-hover;
+        border: 1.5px $base-colour-hover solid;
+      }
+    }
+
+    padding: 15px;
+  }
+
+  padding-bottom: 150x;
 }
 
 /** 
@@ -184,6 +215,10 @@ header {
     font-size: 2em;
     font-family: $poppins;
     text-decoration: underline;
+  }
+
+  h3 {
+    margin: 10px auto;
   }
 
   i {

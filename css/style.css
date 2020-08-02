@@ -9,7 +9,7 @@ body {
   color: #fff;
 }
 body p {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   margin-left: 0px auto;
   margin-right: 0px auto;
@@ -28,7 +28,6 @@ body a i:hover {
 }
 body h3 {
   text-align: center;
-  margin: 10px auto;
   font-weight: 450;
   font-size: 1em;
   background-color: #fff;
@@ -50,14 +49,14 @@ header {
 }
 header ul {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   margin: 20px;
 }
 header li {
   display: inline-block;
 }
 header a {
-  padding: 10px;
+  padding: 5px;
   font-size: 1em;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -111,7 +110,7 @@ header a:hover {
 #about-content {
   padding: 50px 15px;
   text-align: center;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 #about-content h2 {
   text-align: center;
@@ -127,8 +126,7 @@ header a:hover {
 **/
 #projects-content {
   padding: 50px 15px;
-  text-align: center;
-  padding-bottom: 300px;
+  padding-bottom: 150x;
 }
 #projects-content h2 {
   text-align: center;
@@ -137,6 +135,32 @@ header a:hover {
   font-size: 2em;
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
+}
+#projects-content #project-card {
+  padding: 15px;
+}
+#projects-content #project-card img {
+  width: 60%;
+  margin: 5px;
+  border: 1px white solid;
+}
+#projects-content #project-card p {
+  text-align: left;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+#projects-content #project-card button {
+  font-family: "Roboto", sans-serif;
+  margin: 0px auto;
+  background-color: black;
+  color: #fff;
+  border: 1.5px #fff solid;
+}
+#projects-content #project-card button:hover {
+  color: #bfbfbf;
+  border: 1.5px #bfbfbf solid;
 }
 
 /** 
@@ -154,6 +178,9 @@ header a:hover {
   font-size: 2em;
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
+}
+#skills-content h3 {
+  margin: 10px auto;
 }
 #skills-content i {
   margin: 5px;
