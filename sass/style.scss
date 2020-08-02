@@ -1,0 +1,33 @@
+// Background colours: 
+$background-color:black; 
+
+// Text colours: 
+$heading: #fff; 
+
+// Fonts: 
+
+body { 
+    background: $background-color;
+}
+
+#header-content { 
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 { 
+        text-align: center;
+        color: $heading;
+        font-weight: 900;
+        font-size: 4em;
+    }
+    h2 { 
+        text-align: center;
+        color: darken($heading, 25%); 
+        font-weight: 450; 
+        margin-top: 5px; 
+    }
+}

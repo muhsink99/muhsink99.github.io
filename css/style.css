@@ -1,0 +1,26 @@
+body {
+  background: black;
+}
+
+#header-content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#header-content h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 4em;
+}
+#header-content h2 {
+  text-align: center;
+  color: #bfbfbf;
+  font-weight: 450;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

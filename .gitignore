@@ -14,4 +14,10 @@
 # Ignore all local history of files
 .history
 
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
