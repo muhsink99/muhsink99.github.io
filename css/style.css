@@ -8,6 +8,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
+body #navigation-arrow {
+  margin: 20px;
+  width: 20px;
+  color: #e6e6e6;
+}
+body #navigation-arrow:hover {
+  color: #a6a6a6;
+}
 body p {
   font-size: 15px;
   text-align: center;
