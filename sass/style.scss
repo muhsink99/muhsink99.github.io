@@ -22,6 +22,12 @@ body {
   font-family: $roboto;
   color: $base-colour;
 
+  nav {
+    background-color: lighten($background-colour, 5%);
+    z-index: 1000;
+    border-bottom: 0.5px solid $base-colour-hover;
+  }
+
   #navigation-arrow {
     margin: 20px;
     width: 20px;
@@ -41,8 +47,8 @@ body {
 
   &.active {
     overflow: hidden;
-    z-index: -1;
   }
+
   a {
     i {
       padding: 20px;
@@ -93,7 +99,6 @@ header {
     font-size: 1em;
     color: $base-colour;
     font-family: $poppins;
-    border: 1px solid;
 
     &:hover {
       text-decoration: none;
@@ -117,7 +122,6 @@ header {
 
 #lead-content {
   position: absolute;
-  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -129,6 +133,8 @@ header {
     font-weight: 900;
     font-size: 2em;
     font-family: $poppins;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   h2 {
@@ -146,19 +152,21 @@ header {
 **/
 
 #about-content {
-  padding: 50px 15px;
   text-align: center;
 
   h2 {
     text-align: center;
     color: $base-colour;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: $poppins;
     text-decoration: underline;
   }
 
-  padding-bottom: 150px;
+  p {
+    color: darken($base-colour, 20%);
+    font-size: 1em;
+  }
 }
 
 /**
@@ -254,6 +262,6 @@ header {
 footer {
   margin: 15px;
   font-family: $roboto;
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
 }
