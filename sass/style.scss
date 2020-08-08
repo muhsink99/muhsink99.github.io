@@ -217,6 +217,8 @@ header {
 #skills-content {
   padding: 50px 15px;
   text-align: center;
+  width: 75%;
+  margin: 0px auto;
 
   h2 {
     text-align: center;
@@ -236,9 +238,10 @@ header {
   }
 
   #skill {
-    border: 1px white solid;
+    border: 2px white solid;
     margin: 5px auto;
     padding: 5px;
+    max-width: 200px;
   }
 
   #skill-subsection {
@@ -251,6 +254,6 @@ header {
 footer {
   margin: 15px;
   font-family: $roboto;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
 }
