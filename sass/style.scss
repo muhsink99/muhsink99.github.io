@@ -75,13 +75,13 @@ body {
 
   h3 {
     text-align: center;
-    // margin: 10px auto;
+    margin: 10px auto;
     font-weight: 450;
     font-size: 1em;
     background-color: $base-colour;
     color: $background-colour;
     font-family: $poppins;
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 /** 
@@ -204,7 +204,7 @@ body {
 #skills-content {
   padding: 50px 15px;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin: 0px auto;
 
   h2 {
@@ -216,16 +216,12 @@ body {
     text-decoration: underline;
   }
 
-  h3 {
-    margin: 10px auto;
-  }
-
   i {
     margin: 5px;
   }
 
   #skill {
-    border: 2px white solid;
+    // border: 2px white solid;
     margin: 5px auto;
     padding: 5px;
     max-width: 200px;
@@ -234,8 +230,6 @@ body {
   #skill-subsection {
     margin: 25px;
   }
-
-  padding-bottom: 300px;
 }
 
 footer {

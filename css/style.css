@@ -50,12 +50,13 @@ body a i:hover {
 }
 body h3 {
   text-align: center;
+  margin: 10px auto;
   font-weight: 450;
   font-size: 1em;
   background-color: #fff;
   color: #262626;
   font-family: "Poppins", sans-serif;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 /** 
@@ -164,9 +165,8 @@ body h3 {
 #skills-content {
   padding: 50px 15px;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin: 0px auto;
-  padding-bottom: 300px;
 }
 #skills-content h2 {
   text-align: center;
@@ -176,14 +176,10 @@ body h3 {
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
 }
-#skills-content h3 {
-  margin: 10px auto;
-}
 #skills-content i {
   margin: 5px;
 }
 #skills-content #skill {
-  border: 2px white solid;
   margin: 5px auto;
   padding: 5px;
   max-width: 200px;
