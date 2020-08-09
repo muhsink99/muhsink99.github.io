@@ -25,7 +25,19 @@ body {
   nav {
     background-color: lighten($background-colour, 5%);
     z-index: 1000;
-    border-bottom: 0.5px solid $base-colour-hover;
+
+    a {
+      padding: 5px;
+      font-size: 0.7em;
+      color: $base-colour;
+      font-family: $poppins;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+        color: $base-colour-hover;
+      }
+    }
   }
 
   #navigation-arrow {
@@ -72,40 +84,6 @@ body {
     max-width: 150px;
   }
 }
-
-/** 
-    -- MENU CONTENT -- 
-**/
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-
-  ul {
-    display: inline-block;
-    padding: 5px;
-    margin: 20px;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    padding: 5px;
-    font-size: 1em;
-    color: $base-colour;
-    font-family: $poppins;
-
-    &:hover {
-      text-decoration: none;
-      color: $base-colour-hover;
-    }
-  }
-}
 /** 
     -- LEADING SECTION -- 
 **/
@@ -117,6 +95,7 @@ header {
   max-height: 1080px;
   background-size: cover;
   padding: 15px;
+  margin: 10px;
   overflow: hidden;
 }
 

@@ -11,7 +11,17 @@ body {
 body nav {
   background-color: #333333;
   z-index: 1000;
-  border-bottom: 0.5px solid #a6a6a6;
+}
+body nav a {
+  padding: 5px;
+  font-size: 0.7em;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+body nav a:hover {
+  text-decoration: none;
+  color: #a6a6a6;
 }
 body #navigation-arrow {
   margin: 20px;
@@ -49,36 +59,6 @@ body h3 {
 }
 
 /** 
-    -- MENU CONTENT -- 
-**/
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
-header ul {
-  display: inline-block;
-  padding: 5px;
-  margin: 20px;
-}
-header li {
-  display: inline-block;
-}
-header a {
-  padding: 5px;
-  font-size: 1em;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-header a:hover {
-  text-decoration: none;
-  color: #a6a6a6;
-}
-
-/** 
     -- LEADING SECTION -- 
 **/
 #lead {
@@ -88,6 +68,7 @@ header a:hover {
   max-height: 1080px;
   background-size: cover;
   padding: 15px;
+  margin: 10px;
   overflow: hidden;
 }
 
