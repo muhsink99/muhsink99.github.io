@@ -191,6 +191,7 @@ body h3 {
     -- SKILLS SECTION --
 **/
 #skills-content {
+  padding: 40px 15px;
   text-align: left;
   width: 50%;
   margin: 0px auto;
@@ -207,8 +208,22 @@ body h3 {
 #skills-content h3 {
   margin-left: 0px;
 }
-#skills-content #skill {
-  margin-right: 15px;
+#skills-content ul {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+#skills-content li {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  color: black;
+  background: #d9d9d9;
+  list-style: none;
+  cursor: default;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
 }
 #skills-content #skill-subsection {
   margin: 25px auto;
