@@ -121,32 +121,60 @@ body h3 {
     -- PROJECT SECTION -- 
 **/
 #projects-content {
-  padding: 50px 15px;
-  padding-bottom: 150x;
+  background-color: white;
+  padding: 40px 200px 40px 200px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  #projects-content {
+    padding: 40px 20px 20px 40px;
+  }
+}
+#projects-content a i {
+  padding: 5px;
+  color: #404040;
+  size: 200px;
+}
+#projects-content a i:hover {
+  color: #a6a6a6;
 }
 #projects-content h2 {
   text-align: center;
-  color: #fff;
+  color: black;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 #projects-content #project-card {
-  margin-bottom: 50px;
+  border-bottom: 1px #e6e6e6 solid;
 }
-#projects-content #project-card img {
-  display: flex;
-  justify-self: center;
-  width: 30%;
-  border: 1px white solid;
+#projects-content #project-card h3 {
+  color: black;
+  margin-left: 0px;
+  font-weight: bold;
+  text-align: left;
+  max-width: 1000px;
+}
+#projects-content #project-card h4 {
+  text-align: left;
+  font-weight: bold;
+  margin-left: 0px;
+  font-size: 0.8em;
+  background-color: #fff;
+  color: #262626;
+  font-family: "Poppins", sans-serif;
 }
 #projects-content #project-card p {
-  text-align: middle;
-  color: #fff;
+  text-align: left;
+  color: #4d4d4d;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: "Roboto", sans-serif;
+}
+#projects-content #project-card #project-description {
+  margin: 5px;
 }
 #projects-content #project-card button {
   font-family: "Roboto", sans-serif;
@@ -169,11 +197,12 @@ body h3 {
 }
 #skills-content h2 {
   text-align: center;
-  color: #fff;
+  color: white;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.75em;
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 #skills-content h3 {
   margin-left: 0px;

@@ -153,32 +153,65 @@ body {
 **/
 
 #projects-content {
-  padding: 50px 15px;
+  background-color: white;
+  padding: 40px 200px 40px 200px;
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 20px 20px 40px;
+  }
+
+  a {
+    i {
+      padding: 5px;
+      color: lighten($background-colour, 10%);
+      size: 200px;
+
+      &:hover {
+        color: $base-colour-hover;
+      }
+    }
+  }
 
   h2 {
     text-align: center;
-    color: $base-colour;
+    color: black;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: $poppins;
     text-decoration: underline;
+    text-transform: uppercase;
   }
 
   #project-card {
-    margin-bottom: 50px;
-    img {
-      display: flex;
-      justify-self: center;
-      width: 30%;
-      border: 1px white solid;
+    border-bottom: 1px darken(white, 10%) solid;
+
+    h3 {
+      color: black;
+      margin-left: 0px;
+      font-weight: bold;
+      text-align: left;
+      max-width: 1000px;
     }
 
+    h4 {
+      text-align: left;
+      font-weight: bold;
+      margin-left: 0px;
+      font-size: 0.8em;
+      background-color: $base-colour;
+      color: $background-colour;
+      font-family: $poppins;
+    }
     p {
-      text-align: middle;
-      color: $base-colour;
+      text-align: left;
+      color: lighten(black, 30%);
       font-weight: 300;
-      font-size: 1em;
+      font-size: 0.8em;
       font-family: $roboto;
+    }
+
+    #project-description {
+      margin: 5px;
     }
 
     button {
@@ -193,8 +226,7 @@ body {
       }
     }
   }
-
-  padding-bottom: 150x;
+  margin-bottom: 40px;
 }
 
 /** 
@@ -208,11 +240,12 @@ body {
 
   h2 {
     text-align: center;
-    color: $base-colour;
+    color: white;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: $poppins;
     text-decoration: underline;
+    text-transform: uppercase;
   }
 
   h3 {
