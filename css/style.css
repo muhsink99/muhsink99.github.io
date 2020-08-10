@@ -7,6 +7,12 @@ body {
   background: #262626;
   font-family: "Roboto", sans-serif;
   color: #fff;
+  padding-top: 65px;
+}
+@media (max-width: 979px) {
+  body body {
+    padding-top: 65px;
+  }
 }
 body nav {
   background-color: #333333;
@@ -104,14 +110,6 @@ body h3 {
 #about-content {
   text-align: center;
 }
-#about-content h2 {
-  text-align: center;
-  color: #fff;
-  font-weight: 900;
-  font-size: 1.5em;
-  font-family: "Poppins", sans-serif;
-  text-decoration: underline;
-}
 #about-content p {
   color: #cccccc;
   font-size: 0.9em;
@@ -195,6 +193,7 @@ body h3 {
   text-align: left;
   width: 50%;
   margin: 0px auto;
+  margin-bottom: 100px;
 }
 #skills-content h2 {
   text-align: center;
@@ -229,11 +228,44 @@ body h3 {
   margin: 25px auto;
 }
 
+/** 
+    -- CONTACT-SECTION -- 
+**/
+#contact-content {
+  text-align: center;
+  background-color: #333333;
+  padding: 40px 10px;
+  padding-bottom: 5px;
+}
+#contact-content h2 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 1.75em;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#contact-content p {
+  color: #cccccc;
+  font-size: 0.9em;
+}
+#contact-content a {
+  color: white;
+  text-decoration-line: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75em;
+}
+#contact-content col {
+  border: 1px solid white;
+}
+
 footer {
-  margin: 15px;
+  margin-top: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-align: center;
+  background-color: #333333;
 }
 
 /*# sourceMappingURL=style.css.map */
