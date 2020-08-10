@@ -32,7 +32,7 @@ body #navigation-arrow:hover {
   color: #a6a6a6;
 }
 body p {
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
   margin-left: 0px auto;
   margin-right: 0px auto;
@@ -114,7 +114,7 @@ body h3 {
 }
 #about-content p {
   color: #cccccc;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 /**
@@ -163,9 +163,8 @@ body h3 {
     -- SKILLS SECTION --
 **/
 #skills-content {
-  padding: 50px 15px;
-  text-align: center;
-  width: 80%;
+  text-align: left;
+  width: 50%;
   margin: 0px auto;
 }
 #skills-content h2 {
@@ -176,16 +175,14 @@ body h3 {
   font-family: "Poppins", sans-serif;
   text-decoration: underline;
 }
-#skills-content i {
-  margin: 5px;
+#skills-content h3 {
+  margin-left: 0px;
 }
 #skills-content #skill {
-  margin: 5px auto;
-  padding: 5px;
-  max-width: 200px;
+  margin-right: 15px;
 }
 #skills-content #skill-subsection {
-  margin: 25px;
+  margin: 25px auto;
 }
 
 footer {
